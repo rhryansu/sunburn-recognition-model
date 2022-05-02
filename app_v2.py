@@ -29,7 +29,7 @@ def upload_f():
   
 def finds():
     # test_datagen = ImageDataGenerator(rescale = 1./255)
-    vals = ["Second_degree", "First_degree"]
+    vals = ["Second degree", "First degree"]
     # test_dir = 'uploaded'
     # test_generator = test_datagen.flow_from_directory(
     #         test_dir,
@@ -47,7 +47,8 @@ def finds():
     # pred = model.predict_generator(test_generator)
     pred = model.predict(x)
     print(pred)
-    return str(vals[np.argmax(pred)])
+    result = str(vals[np.argmax(pred)])
+    return "Your sunburn condition is at the " + result if result == "Second_degree" else "Your sunburn condition is at the " + result
   
 @app.route('/uploader', methods = ['GET', 'POST'])
 def upload_file():
