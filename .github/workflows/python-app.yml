@@ -17,20 +17,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    # - name: Set up Python 3.10
-    #   uses: actions/setup-python@v3
-    #   with:
-    #     python-version: "3.x"
-    #     architecture: 'x64'
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10.4"
+        architecture: 'x64'
     - name: Install dependencies
       run: |
-        python3.10 -m pip install --upgrade pip
-        python3.10 -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then python3.10 -m pip install -r requirements.txt; fi
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Install customised dependencies
       run: |
-        python3.10 -m pip install pillow tensorflow numpy keras
+        python -m pip install pillow tensorflow numpy keras
     
     - name: Lint with flake8
       run: |
