@@ -30,7 +30,7 @@ jobs:
         
     - name: Install customised dependencies
       run: |
-        python3 -m pip install pillow flask numpy keras
+        python3 -m pip install pillow flask tensorflow numpy keras
   
 
     - name: Run Application
