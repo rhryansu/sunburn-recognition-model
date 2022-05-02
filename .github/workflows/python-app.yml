@@ -30,7 +30,7 @@ jobs:
         
     - name: Install customised dependencies
       run: |
-        python3 -m pip install pillow tensorflow numpy keras
+        python3 -m pip install pillow numpy keras
     
     - name: Lint with flake8
       run: |
@@ -41,4 +41,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest
+        python3 app_v2.py
