@@ -58,4 +58,5 @@ def upload_file():
         return render_template('pred.html', ss = val)
   
 if __name__ == '__main__':
-    app.run()
+    app.debug = True
+    app.run(host="0.0.0.0")
