@@ -21,7 +21,7 @@ app = Flask(__name__)
   
 app.config['UPLOAD_FOLDER'] = 'uploaded/image'
 save_pic_name = 'one_img.png'
-img_path = os.path.join(app.config['UPLOAD_FOLDER'], save_pic_name)
+img_path = os.path.join(app.config['UPLOAD_FOLDER'], save_pic_name) 
   
 @app.route('/')
 def upload_f():
