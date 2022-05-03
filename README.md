@@ -43,13 +43,13 @@
 
 ## About the Project
 
-**This repository is dedicated for [Protect Your Skin](https://www.protecturskin.social/)**
+**This repository is dedicated for [Protect Your Skin](https://github.com/rhryansu/protecturskin)**
 
 ### Built With
 
 Flask / Python / Tensorflow / CNN
 
-And is a feature for [quiz-app](https://github.com/rhryansu/quiz-app).
+And is a feature for [Protect Your Skin](https://www.protecturskin.social/).
 
 
 
