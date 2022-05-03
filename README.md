@@ -51,8 +51,10 @@ Flask / Python / Tensorflow / CNN
 
 And is a feature for [Protect Your Skin](https://www.protecturskin.social/).
 
+### Integrated With
 
-
+* Github Actions CI/CD pipeline
+* AWS Elastic Compute Cloud (EC2)
 ## Getting Started
 
 
@@ -74,13 +76,13 @@ And is a feature for [Protect Your Skin](https://www.protecturskin.social/).
 1. Clone this repo
 
    ```git clone https://github.com/rhryansu/sunburn-recognition-model.git```
-
-2. Open cloned folder with VSCode
-    - Install plugins
+<br/>
+2. Open cloned folder with a python IDE
+  * Install plugins
     ```python3 - m pip install tensorflow pillow flask numpy```
-    - Run the application locally
+  * Run the application locally
     ```python3 app_v2.py```
-    - Copy this path and paste to your browser
+  * Copy this path and paste to your browser
     ```http://localhost:5000```
 
 ## Usage
