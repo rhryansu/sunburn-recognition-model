@@ -43,13 +43,13 @@
 
 ## About the Project
 
-**This repository is dedicated for www.protecturskin.social for FIT5120 Industry Experience 2022S1 held by Monash University.**
+**This repository is dedicated for [Protect Your Skin](https://www.protecturskin.social/)**
 
 ### Built With
 
-HTML / CSS / Javascript
+Flask / Python / Tensorflow / CNN
 
-And is a home-page entrance for [quiz-app](https://github.com/rhryansu/quiz-app).
+And is a feature for [quiz-app](https://github.com/rhryansu/quiz-app).
 
 
 
@@ -57,27 +57,37 @@ And is a home-page entrance for [quiz-app](https://github.com/rhryansu/quiz-app)
 
 
 ### Prerequisites
+**Environment**
+* Python IDE
+* python 3.*
+* pip3
 
-* Text editor (VSCode recommended) with live server plugin (recommended, not required)
+**Plugins**
+ - Tensorflow
+ - Pillow
+ - Flask
+ - Numpy
 
 
 ### Installation
 
 1. Clone this repo
 
-   ```git clone https://github.com/rhryansu/protecturskin.git```
+   ```git clone https://github.com/rhryansu/sunburn-recognition-model.git```
 
 2. Open cloned folder with VSCode
-
-   a) If you already installed live server plugin, then find the button bottom right on the vscode window, `Go Live`.
-
-   b) If you have not installed live server plugin yet, then simply open the `index.html`  in the explorer (windows)/ finder (macOS).
+    - Install plugins
+    ```python3 - m pip install tensorflow pillow flask numpy```
+    - Run the application locally
+    ```python3 app_v2.py```
+    - Copy this path and paste to your browser
+    ```http://localhost:5000```
 
 ## Usage
 
 1. Explore and learn sun protection knowledge.
 
-2. Take [quiz test](https://github.com/rhryansu/quiz-app)
+2. Take [Sunburn Recognition](http://protecturskin.social:5000)
 
 ## License
 
@@ -87,7 +97,7 @@ And is a home-page entrance for [quiz-app](https://github.com/rhryansu/quiz-app)
 
 ## Contact
 
-Ruihua Su - rh.ryan.su@gmail.com, rsuu0005@student.monash.edu
+Ruihua Su - rh.ryan.su@gmail.com
 
 Monash IE TP04 - 5PoorGuy
 
