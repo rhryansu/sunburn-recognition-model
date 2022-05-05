@@ -48,7 +48,7 @@ def finds():
     pred = model.predict(x)
     print(pred)
     result = str(vals[np.argmax(pred)])
-    return "Your sunburn condition is at the " + result if result == "Second_degree" else "Your sunburn condition is at the " + result
+    return result
   
 @app.route('/uploader', methods = ['GET', 'POST'])
 def upload_file():
