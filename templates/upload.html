@@ -13,7 +13,7 @@
     <meta charset=utf-8 />
 
     <script src="{{ url_for('static', filename='upload.js') }}"></script>
-
+    <script>window.alert("Disclaimer: By using this application, You agree that the result is not considered as a medical advice and just for self-care. Once you feel unwell, you should see a doctor as soon as possible.")</script>
     <style>
         article,
         aside,
@@ -26,45 +26,57 @@
         section {
             display: block;
         }
-        body,h1 {font-family: "Raleway", Arial, sans-serif}
-h1 {letter-spacing: 6px}
-.w3-row-padding img {margin-bottom: 12px}
-        
+
+        body,
+        h1 {
+            font-family: "Raleway", Arial, sans-serif
+        }
+
+        h1 {
+            letter-spacing: 6px
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
     </style>
 </head>
 <div class="w3-content">
-<body style="background-image: url('lucas-ludwig-WL99c-jPzoU-unsplash.jpg');">
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-        <h1 class="w3-xlarge">Sun Burn Recognition</h1>
-            <br/>
-        <div style="border: 2px solid red; background-image: url('');">
+
+    <body style="background-image: url('lucas-ludwig-WL99c-jPzoU-unsplash.jpg');">
+
+        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+            <h1 class="w3-xlarge">Sun Burn Recognition</h1>
+            <br />
+            <!-- <div style="border: 2px solid red; background-image: url('');">
         <h3 style="color: red;">Disclaimer</h3>
         <h4 style="color: red;">By using this application, </h4> 
         <h4 style="color: red;">You agree that the result is not considered as a medical advice and just for self-care. </h4>
         <h4 style="color: red;">Once you feel unwell, you should see a doctor as soon as possible. </h4>
-        </div>
-        <div class="w3-padding-32">
-          <div class="w3-bar w3-border">
-            <a href="http://protecturskin.social" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button w3-light-grey">Recognition</a>
-            <a href="#" class="w3-bar-item w3-button">Contact</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">About</a>
-          </div>
-        </div>
-      </header>
-    <div class="w3-center" style="padding: 128px 16px;">
-        <form action="http://protecturskin.social:5000/uploader" method="POST" enctype="multipart/form-data">
-            <input type='file' name='file' onchange="readURL(this);" />
-            <img id="blah" src="#" alt="your image" />
-            <button type="submit">Submit & predict</button>
+        </div> -->
+            <div class="w3-padding-32">
+                <div class="w3-bar w3-border">
+                    <a href="http://protecturskin.social" class="w3-bar-item w3-button">Home</a>
+                    <a href="http://protecturskin.social:5000" class="w3-bar-item w3-button w3-light-grey">Sunburn
+                        Recognition</a>
+                    <a href="http://protecturskin.social:3000" class="w3-bar-item w3-button">Sunburn Knowledge Quiz</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small">About</a>
+                </div>
+            </div>
+        </header>
+        <div class="w3-center" style="padding: 128px 16px;">
+            <form action="http://protecturskin.social:5000/uploader" method="POST" enctype="multipart/form-data">
+                <input type='file' name='file' onchange="readURL(this);" />
+                <img id="blah" src="#" alt="your image" />
+                <button type="submit">Submit & predict</button>
 
-        </form>
-    </div>
-    <div class="w3-xlarge" style="padding: 128px 16px;">
-        
-    </div>
+            </form>
+        </div>
+        <div class="w3-xlarge" style="padding: 128px 16px;">
+
+        </div>
 </div>
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -72,7 +84,7 @@ h1 {letter-spacing: 6px}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p>Powered by 5 Poor Guys</p>
-  </footer>
+</footer>
 </body>
 
 </html>

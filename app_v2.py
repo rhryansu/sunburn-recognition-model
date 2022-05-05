@@ -56,7 +56,7 @@ def upload_file():
         f = request.files['file']
         f.save(img_path)
         val = finds()
-        return render_template('pred.html', ss = val)
+        return render_template('pred.html', ss = val) if val == "First Degree" else render_template('pred_2.html', ss = val)
   
 if __name__ == '__main__':
     app.debug = True
