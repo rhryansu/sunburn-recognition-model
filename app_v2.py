@@ -11,7 +11,6 @@ import tensorflow as tf
 import numpy as np
 import os 
 from tensorflow.keras.preprocessing import image
-import pdfkit 
   
 #try:
 #    import shutil
@@ -71,6 +70,7 @@ def upload_file():
         e = request.form['email']
         f.save(img_path)
         val = finds()
+
 
         email_sender(val, e)
         # name = 'Diagnosis Report'
