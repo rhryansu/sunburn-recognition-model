@@ -80,10 +80,10 @@ def upload_file():
         # response.headers["Content-Type"] = "application/pdf"
         # response.headers["Content-Disposition"] = "inline; filename=Report.pdf"
         
-        return render_template('pred.html', ss = val) if val == 1 else render_template('pred_2.html', ss = val)
+        return render_template('index.html')
 
 def email_sender(degree, recipients):
-    
+
     e = str(recipients)
     
     if degree == 1:
